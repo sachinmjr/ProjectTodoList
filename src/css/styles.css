@@ -1,0 +1,21 @@
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+.filteredText {
+	padding: 10px 0;
+	font-style: italic;
+}
+.backToList {
+    float: right;
+}
+.detailWrapper {
+
+}
+.topMargin {
+	margin-top: 10px;
+}
+.rowDetail {
+	padding: 10px 0;
+}

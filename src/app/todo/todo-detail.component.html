@@ -1,0 +1,36 @@
+<h1> Project Details </h1>
+
+<div>
+	<div class="backToList">
+		<button type="button" class="btn btn-primary" (click)="gotoTodolist()">Back to todoList</button>
+	</div>
+	<div class= "detailWrapper" *ngIf="todo">
+		<h3>{{ todo.projectName }}</h3>
+		<div class="rowDetail">
+			<label>Serial No: </label>
+			<span>{{ todo.serial }}</span>
+		</div>
+		<div class="rowDetail">
+			<label>Name: </label>
+			<span>{{todo.projectName}}</span>
+		</div>
+		<div class="rowDetail">
+			<label>Description: </label>
+			<span>{{todo.projectName}}</span>
+		</div>
+		<div class="rowDetail">
+			<label>Status: </label>
+			<span>{{todo.status}}</span>
+		</div>
+
+		<!-- Some data is hardcode -->
+		<div class="rowDetail">
+			<label>Created by: </label>
+			<span>Sachin Havale</span>
+		</div>
+		<div class="rowDetail">
+			<label>Created at: </label>
+			<span>31 March 2017 </span>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,16 @@
+ <h1> Todo List</h1>
+
+ <input class="form-control" type="text" [value]="filterText" [placeholder]="filterPlaceholder" [formControl]="filterInput" />
+
+ <div class="filteredText">
+   <span>Searching for: </span><span class="bold" [innerHtml]="filterText"></span>
+ </div>
+<div>
+	<ul class="list-group">
+		<li class="list-group-item" *ngFor= "let task of todoList | filter:{projectName: filterText} " (click)="onSelect(task)" >
+			<div><b>Serial No</b>: {{task.serial}}</div>
+			<div><b>Project Title</b>: {{task.projectName}}</div>
+			<div><b>Status</b>: {{task.status}}</div>
+		</li>
+	</ul>
+</div>
